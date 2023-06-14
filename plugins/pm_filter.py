@@ -912,7 +912,7 @@ if imdb and imdb.get('poster'):
                 await asyncio.sleep(600)
                 await no_pic.delete()
                 await message.delete()
-    else:
+else:
         no_fil=await message.reply_photo(photo=NOR_IMG, caption=cap, reply_markup=InlineKeyboardMarkup(btn))
         if settings["auto_delete"]:
             await asyncio.sleep(600)
